@@ -194,6 +194,7 @@ void calculate_key(db *Alice, db *Bob){
     Bob->kValue =Method_Operation(Alice->yValue,Bob->xValue,Bob->pValue);
     cout<<"The key is  "<< Alice->kValue<<"\n ";                                     //a and b shared secret key together
     cout<<endl;
+    
 }
 
 //This function is about the lecture 7 Page 13
@@ -249,6 +250,3 @@ bool Check_prime_value(int value){
 }
 
 
-
- *
- */
