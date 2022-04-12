@@ -218,26 +218,15 @@ int Method_Operation(int a, int dec, int n ){
 
 //translate the Decimal to Binary
 void Decimal_to_Binary(int Decimal, int *Binary){      //if the decimal is 150
-    int i = 0;                                  //150 %2 =0     0
-    while (Decimal){                            //75 %2= 1      1
-        Binary[i]= Decimal%2;                   //37 %2 =1      1
-        Decimal =Decimal/2;                     //18% 2 =0      0
-        i++;                                    //              1
-    }                                           //              0
+
 }                                               //              0
                                                 //              1  so is 10010110
 
 
 //calculate the digits
 int calculate_number(int inputnum){             //inputnum is 150
-    int value = 0;                              //150/2 = 75  in this time the value is 1
-    while (inputnum){                           //75/2 = 37                             2
-        inputnum =inputnum/2;                   //37/2 = 18                             3
-        value++;                                //18/2 = 9                              4
-    }                                           //9/2  = 4                              5
-    return value;                               //       2                              6
-}                                               //      1                               7
-                                                //       0                              8  then we can know the size value is 8
+
+}
 
 
 //this is checking the prime number function
@@ -248,5 +237,6 @@ bool Check_prime_value(int value){
     }
     return true;
 }
+
 
 
