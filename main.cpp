@@ -1,8 +1,5 @@
 /*
- *
- * Weihong Luo
- * 19326131
- * Diffile Hellman programming
+  * Diffile Hellman programming
  */
 
 
@@ -252,83 +249,6 @@ bool Check_prime_value(int value){
 }
 
 
-/*Solution function:
- * There are three option in the main function, option 1 is user input , option 2 is random input and option 3 is ending the programming,
- * if user select option 1, then go to the user input function. In the user input function, user need to enter the correct value of g,p,xa and xb
- * if one of the input value is incorrect, user need to in put the correct ine, At the ending of this function will go to find the key function
- * (calculate_key). This function will use the // YA = gXA mod p and // YB = gXB mod p, finally, we can get the user shared key K.
- * However, if user select the option 2 in main function steps, the programming will get to the random number, those steps are smillary wait
- * user input function. At the end of this function, will get the rnadom number input shared key. Select the option 3 to stop the programming in main function
- *
- *
- *
- * Test plan: there are two example ;
- * Example 1: pvalue=11, gvalue=7, xAvalue=3 and xBvalue=4, find the kvalue=5 (user input)
- * Example 2: use the random input
- * Example 3: pvalue=97, gvalue=5, xAvalue=36 and xBvalue=58, find the kvalue=75
- *
- * test results: Example 1;
- *This is Diffie-Hellman key exchange programing.
-Option 1. choose the input method.
-Option 2. choose the random method.
-Option 3. Exit the programming.
-1
-The input number should be integer number:
-P value should be the prime number and the number is between 3 and 100
-P value is :11
-G value should be the prime number and the number is between 1 and 10
-G value is :7
-Xa value is between 2 and 10
-Xa value is :3
-Xb value is between 2 and 10
-Xb value is :4
-The key is  5
- *so the  pvalue=11, gvalue=7, xAvalue=3 and xBvalue=4, the kvalue=5 (user input) is correct
- *
- * Example 2: random input:
- * This is Diffie-Hellman key exchange programing.
-Option 1. choose the input method.
-Option 2. choose the random method.
-Option 3. Exit the programming.
-2
-The random method like this :
-The random P value is : 17
-The random G value is : 12
-The random Xa value is : 8
-The random Xb value is : 4
-the key is  1
- *
- * we can se the random input : pvalue=17, gvalue=12, xA-value=8 and xB-value=4, k=1.
- *
- *
- * This is example 3 user input:
- * This is Diffie-Hellman key exchange programing.
-Option 1. choose the input method.
-Option 2. choose the random method.
-Option 3. Exit the programming.
-1
-The input number should be integer number:
-P value should be the prime number and the number is between 3 and 100
-P value is :97
-G value should be the prime number and the number is between 1 and 96
-G value is :5
-Xa value is between 2 and 96
-Xa value is :36
-Xb value is between 2 and 96
-Xb value is :58
-The key is  75
- *so the example3:when pvalue=97, gvalue=5, xAvalue=36 and xBvalue=58. the kvalue=75 is correct
- *
- * How to use the Diffile-Hellamn programming?
- * First run the programming, then there are three options can be selecting. Option 1 is user input, option 2 is random input.
- * when user select the option 1 then go to the user input steps, then input the x, g , xa and xb number, after that the programming
- * will show the key. If user select the option 2, then the programming will use the random number. after that it will show all the
- * random information. If user want to end the programming, select option 3 then the code will be stopping.
- *
- * User error input:
- * all the p and g value should be input the primary number, if not primary number it will show the error messages and user need to
- * input the correct. the p value need to between 3 and 100. if more than 100 or less than 3, user need to input the number again.
- * g value need to enter between 1 and user enter p value.
- *
+
  *
  */
